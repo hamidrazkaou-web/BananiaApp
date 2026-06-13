@@ -1,0 +1,19 @@
+{
+  "name": "banania-app",
+  "version": "1.0.0",
+  "description": "Banania - JavaScript port of the Windows 3.x game, packaged as an Android app with Capacitor",
+  "private": true,
+  "scripts": {
+    "sync": "cap sync android",
+    "open:android": "cap open android",
+    "build:apk": "cd android && ./gradlew assembleDebug",
+    "build:aab": "cd android && ./gradlew bundleRelease"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
+  }
+}
